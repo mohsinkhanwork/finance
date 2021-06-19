@@ -35,7 +35,7 @@
 
 <?php
 
-if( $_GET['subcat'] == 'add-users' && isset($_GET['edit']) )
+if( $_GET['subcat'] == 'add-users' && isset($_GET['edit'])  !isset($_GET['doc_number']) )
 		
 	{
 		$idAttr = "insertForm";
@@ -131,7 +131,7 @@ if( $_GET['subcat'] == 'add-users' && isset($_GET['edit']) )
 
 
 
-<?php } else if ( $_GET['subcat'] == 'add-users' && !isset($_GET['edit']) )
+<?php } else if ( $_GET['subcat'] == 'add-users' && !isset($_GET['edit'])  )
 
 	{
 		
